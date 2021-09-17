@@ -19,8 +19,10 @@ public class MainController extends ControllerExtension {
     private final MainService mainService;
 
     @GetMapping(value = "/")
-    public void getMainPage(HttpServletRequest request, ModelMap modelMap, HttpServletResponse response) {
+    public Strirng getMainPage(HttpServletRequest request, ModelMap modelMap, HttpServletResponse response) {
         ServiceMessage message = createServiceMessage(request);
+
+        return "index";
 
     }
 
