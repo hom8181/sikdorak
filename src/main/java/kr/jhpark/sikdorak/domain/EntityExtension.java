@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package kr.jhpark.sikdorak.domain;
 
 import lombok.Getter;
 import lombok.Setter;

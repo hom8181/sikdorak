@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package kr.jhpark.sikdorak.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -11,25 +11,19 @@ import org.springframework.data.annotation.Id;
 @AccessType(AccessType.Type.PROPERTY)
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PACKAGE)
-public class Member extends EntityExtension {
+public class PostReview {
 
-    // 회원 IDX
+    // 포스트 리뷰 idx
     @Id
+    private long postReviewIdx;
+
+    // 리뷰 내용
+    private String content;
+
+    // 작성자 idx
     private String memberIdx;
 
-    // 이메일
-    private String email;
-
-    // 비밀번호
-    private String password;
-
-    // 이름
-    private String name;
-
-    // 성별
-    private String gender;
-
-    // 생년월일
-    private int birth;
+    // 조회수
+    private String viewCount;
 
 }

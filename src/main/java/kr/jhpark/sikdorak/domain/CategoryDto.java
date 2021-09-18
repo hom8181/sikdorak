@@ -1,7 +1,6 @@
-package com.example.demo.domain;
+package kr.jhpark.sikdorak.domain;
 
 import lombok.*;
-import org.springframework.data.annotation.Id;
 
 @NoArgsConstructor
 @AllArgsConstructor

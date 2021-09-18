@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package kr.jhpark.sikdorak.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -11,19 +11,16 @@ import org.springframework.data.annotation.Id;
 @AccessType(AccessType.Type.PROPERTY)
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PACKAGE)
-public class PostReview {
+public class BookmarkDirectory {
 
-    // 포스트 리뷰 idx
+    // 즐겨찾기 분류 idx
     @Id
-    private long postReviewIdx;
+    private long bookmarkDirectoryIdx;
 
-    // 리뷰 내용
-    private String content;
+    // 이름
+    private String name;
 
-    // 작성자 idx
+    // 회원idx
     private String memberIdx;
-
-    // 조회수
-    private String viewCount;
 
 }

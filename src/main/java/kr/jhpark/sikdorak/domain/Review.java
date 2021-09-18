@@ -1,15 +1,20 @@
-package com.example.demo.domain;
+package kr.jhpark.sikdorak.domain;
 
-import lombok.*;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.AccessType;
+import org.springframework.data.annotation.Id;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
-@Setter
-@Builder
-public class ReviewDto {
+@AccessType(AccessType.Type.PROPERTY)
+@NoArgsConstructor
+@AllArgsConstructor(access = AccessLevel.PACKAGE)
+public class Review {
 
     // 후기 idx
+    @Id
     private long reviewIdx;
 
     // 멤버 idx

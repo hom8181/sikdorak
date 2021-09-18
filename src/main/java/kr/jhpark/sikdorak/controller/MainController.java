@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package kr.jhpark.sikdorak.controller;
 
-import com.example.demo.service.MainService;
-import com.example.demo.util.ServiceMessage;
+import kr.jhpark.sikdorak.service.MainService;
+import kr.jhpark.sikdorak.util.ServiceMessage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -19,7 +19,7 @@ public class MainController extends ControllerExtension {
     private final MainService mainService;
 
     @GetMapping(value = "/")
-    public Strirng getMainPage(HttpServletRequest request, ModelMap modelMap, HttpServletResponse response) {
+    public String getMainPage(HttpServletRequest request, ModelMap modelMap, HttpServletResponse response) {
         ServiceMessage message = createServiceMessage(request);
 
         return "index";

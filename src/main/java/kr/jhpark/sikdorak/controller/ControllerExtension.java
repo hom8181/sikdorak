@@ -1,9 +1,10 @@
-package com.example.demo.controller;
+package kr.jhpark.sikdorak.controller;
 
-import com.example.demo.domain.MemberDto;
-import com.example.demo.util.ServiceMessage;
-import com.example.demo.util.TextUtils;
+import kr.jhpark.sikdorak.domain.MemberDto;
+import kr.jhpark.sikdorak.util.ServiceMessage;
+import kr.jhpark.sikdorak.util.TextUtils;
 import lombok.extern.slf4j.Slf4j;
+
 
 import javax.servlet.http.HttpServletRequest;
 

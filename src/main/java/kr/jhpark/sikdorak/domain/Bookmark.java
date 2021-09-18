@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package kr.jhpark.sikdorak.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -11,13 +11,16 @@ import org.springframework.data.annotation.Id;
 @AccessType(AccessType.Type.PROPERTY)
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PACKAGE)
-public class Category {
+public class Bookmark {
 
-    // 업종 idx
+    // 즐겨찾기 idx
     @Id
-    private int categoryIdx;
+    private long bookmarkIdx;
 
-    // 업종명
-    private String name;
+    // 회원 idx
+    private String memberIdx;
+
+    // 식당 id
+    private String restaurantIdx;
 
 }
