@@ -1,5 +1,6 @@
 package kr.jhpark.sikdorak.controller;
 
+import kr.jhpark.sikdorak.domain.Restaurant;
 import kr.jhpark.sikdorak.service.MainService;
 import kr.jhpark.sikdorak.util.ServiceMessage;
 import lombok.RequiredArgsConstructor;
@@ -21,6 +22,10 @@ public class MainController extends ControllerExtension {
     @GetMapping(value = "/")
     public String getMainPage(HttpServletRequest request, ModelMap modelMap, HttpServletResponse response) {
         ServiceMessage message = createServiceMessage(request);
+
+        mainService.getMainPage(message);
+
+        modelMap.addAttribute("restaurantList", message.getListObject("restaurantList", Restaurant.class));
 
         return "index";
 
