@@ -1,6 +1,5 @@
 package kr.jhpark.sikdorak.controller;
 
-import kr.jhpark.sikdorak.service.MainService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
